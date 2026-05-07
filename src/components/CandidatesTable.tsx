@@ -53,11 +53,11 @@ export default function CandidatesTable({
           <thead>
             <tr className="border-b border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900/50">
               <th
-                onClick={() => onSort("Candidat")}
+                onClick={() => onSort("Condidat")}
                 className="text-left p-4 text-sm font-semibold text-zinc-900 dark:text-zinc-50 cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors select-none"
               >
                 <div className="flex items-center gap-1">
-                  Candidat <SortIcon field="Candidat" />
+                  Candidat <SortIcon field="Condidat" />
                 </div>
               </th>
               <th
@@ -122,7 +122,7 @@ export default function CandidatesTable({
                 >
                   <td className="p-4">
                     <span className="font-medium text-zinc-900 dark:text-zinc-50">
-                      {candidat.Candidat || "-"}
+                      {candidat.Condidat || "-"}
                     </span>
                   </td>
                   <td className="p-4">
@@ -161,7 +161,7 @@ export default function CandidatesTable({
                         Début: {formatDate(candidat["Date de Debut"])}
                       </span>
                       <span className="text-sm text-zinc-600 dark:text-zinc-300">
-                        Fin: {formatDate(candidat["Date de Fin"])}
+                        Fin: {formatDate(candidat["date de Fin"])}
                       </span>
                     </div>
                   </td>
@@ -207,7 +207,7 @@ export default function CandidatesTable({
                 >
                   <div>
                     <span className="font-medium text-zinc-900 dark:text-zinc-50 block">
-                      {candidat.Candidat || "-"}
+                      {candidat.Condidat || "-"}
                     </span>
                     <span className="text-sm text-zinc-500 dark:text-zinc-400">
                       {candidat.Filiere || "-"} - {candidat.Etablissement || "-"}
@@ -241,7 +241,7 @@ export default function CandidatesTable({
                     </div>
                     <div className="flex justify-between text-sm text-zinc-600 dark:text-zinc-300">
                       <span>Début: {formatDate(candidat["Date de Debut"])}</span>
-                      <span>Fin: {formatDate(candidat["Date de Fin"])}</span>
+                      <span>Fin: {formatDate(candidat["date de Fin"])}</span>
                     </div>
                   </div>
                 )}

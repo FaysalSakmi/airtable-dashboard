@@ -138,8 +138,8 @@ export default function StatsCards({ candidats }: StatsCardsProps) {
               <p className="text-2xl font-bold text-zinc-900 dark:text-zinc-50 mt-1">
                 {
                   candidats.filter((c) => {
-                    if (!c["Date de Fin"]) return false;
-                    return new Date(c["Date de Fin"]) >= new Date();
+                    if (!c["date de Fin"]) return false;
+                    return new Date(c["date de Fin"]) >= new Date();
                   }).length
                 }
               </p>

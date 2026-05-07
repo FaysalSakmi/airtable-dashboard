@@ -63,7 +63,7 @@ export default function Dashboard() {
     .filter((candidat) => {
       const matchesSearch =
         !searchQuery ||
-        candidat.Candidat.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        candidat.Condidat.toLowerCase().includes(searchQuery.toLowerCase()) ||
         candidat.Filiere.toLowerCase().includes(searchQuery.toLowerCase()) ||
         candidat.Etablissement.toLowerCase().includes(
           searchQuery.toLowerCase()
@@ -82,7 +82,7 @@ export default function Dashboard() {
       const aValue = a[sortField as keyof Candidat];
       const bValue = b[sortField as keyof Candidat];
 
-      if (sortField === "Date de Debut" || sortField === "Date de Fin") {
+      if (sortField === "Date de Debut" || sortField === "date de Fin") {
         const aDate = new Date(aValue as string);
         const bDate = new Date(bValue as string);
         return sortDirection === "asc"

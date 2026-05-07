@@ -19,13 +19,13 @@ export async function fetchCandidats(): Promise<Candidat[]> {
 
     return records.map((record) => ({
       id: record.id,
-      Candidat: String(record.fields["Candidat"] || ""),
+      Condidat: String(record.fields["Condidat"] || ""),
       Filiere: String(record.fields["Filiere"] || ""),
       Etablissement: String(record.fields["Etablissement"] || ""),
       "Numero Telephone": String(record.fields["Numero Telephone"] || ""),
       Email: String(record.fields["Email"] || ""),
       "Date de Debut": String(record.fields["Date de Debut"] || ""),
-      "Date de Fin": String(record.fields["Date de Fin"] || ""),
+      "date de Fin": String(record.fields["date de Fin"] || ""),
     }));
   } catch (error) {
     console.error("Error fetching data from Airtable:", error);

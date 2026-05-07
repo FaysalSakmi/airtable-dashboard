@@ -1,12 +1,12 @@
 export interface Candidat {
   id: string;
-  Candidat: string;
+  Condidat: string;
   Filiere: string;
   Etablissement: string;
   "Numero Telephone": string;
   Email: string;
   "Date de Debut": string;
-  "Date de Fin": string;
+  "date de Fin": string;
 }
 
 export type FiliereFilter = string;
